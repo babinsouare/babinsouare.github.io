@@ -1,10 +1,9 @@
 name: GitHub Actions First
-on: 
-  -push
+on: push
 jobs:
   Mkdocs-project:
     runs-on: ubuntu-latest
     steps:
-      -name: "List repository files"
-        run: "ls -l"
+     - name: "List repository files"
+       run: "ls -l"
       
