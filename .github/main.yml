@@ -1,0 +1,10 @@
+name: Github Action first
+on:
+   -push
+   -job:
+       -Mkdocs-project
+       runs-on: ubuntu-latest
+       steps:
+	-name: "list repository files"
+	run: "ls -al"
+	
